@@ -23,6 +23,7 @@ pub async fn run_api_server() {
                 "products": [
                     {"id": 1, "name": "iPhone 14", "price": 999.99},
                     {"id": 2, "name": "Samsung Galaxy", "price": 899.99}
+                    {"id": 3, "name": "HP", "price": 819.99}
                 ]
             }"#
         });
@@ -41,4 +42,5 @@ pub async fn run_api_server() {
     warp::serve(routes)
         .run(([127, 0, 0, 1], 8080))
         .await;
+
 }
